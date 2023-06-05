@@ -1,5 +1,7 @@
 package com.training.jpa;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
@@ -14,6 +16,7 @@ public class CustomerDates {
 
     @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinColumn(name = "customer_id",nullable = false)
+    @JsonIgnore
     private Customer customer;
 
     public LocalDateTime getCreateDate() {

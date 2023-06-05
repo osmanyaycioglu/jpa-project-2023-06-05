@@ -1,5 +1,7 @@
 package com.training.jpa;
 
+import org.hibernate.annotations.Subselect;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;

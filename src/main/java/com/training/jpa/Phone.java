@@ -1,5 +1,7 @@
 package com.training.jpa;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -14,6 +16,7 @@ public class Phone {
     private String phoneName;
     private String phoneNumber;
     @ManyToOne
+    @JsonIgnore
     private Customer customer;
 
     public String getPhoneName() {

@@ -15,7 +15,7 @@ import java.util.Optional;
 import java.util.Random;
 import java.util.Set;
 
-@Component
+// @Component
 public class AppRunMe implements ApplicationRunner {
 
     @Autowired
